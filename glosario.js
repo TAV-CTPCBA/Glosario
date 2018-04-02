@@ -9,7 +9,7 @@ function findMatches(wordToMatch, palabras) {
   return palabras.filter(palabra => {
     // here we need to figure out if the city or state matches what was searched
     const regex = new RegExp(wordToMatch, 'gi');
-    return palabra.ingles.match(regex) || palabra.español.match(regex)
+    return palabra.ingles.match(regex)
   });
 }
 
