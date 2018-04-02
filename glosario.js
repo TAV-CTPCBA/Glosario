@@ -13,15 +13,17 @@ function findMatches(wordToMatch, palabras) {
 
 function displayMatches() {
   const matchArray = findMatches(this.value, palabras);
-  const html = matchArray.map(palabra => {
-    return `
-      <div class="inner-wrapper">
-        <p>${palabra.ingles}</p>
-        <p>${palabra.español}</p>
-      </div>
-    `;
-  }).join('');
-  results.innerHTML = html;
+  if(this.value.length >= 3) {
+    const html = matchArray.map(palabra => {
+      return `
+        <div class="inner-wrapper">
+          <p>${palabra.ingles}</p>
+          <p>${palabra.español}</p>
+        </div>
+      `;
+    }).join('');
+    results.innerHTML = html;
+  }
 }
 
 function checkInput() {
