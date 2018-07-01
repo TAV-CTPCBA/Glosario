@@ -8,8 +8,11 @@ html {
 
   body {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
     padding: 15px;
   }
   *, *:before, *:after {
@@ -51,8 +54,11 @@ html {
   .inner-wrapper {
     display: flex;
     flex-direction: row;
+    flex-basis: 50%;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
+    padding: 20px;
   }
 
   .inner-wrapper p {
@@ -64,3 +70,8 @@ html {
     background:#ffc600;
   }
 
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+  }
