@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Glosario español latinoamericano</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/alimentos-style.css">
+  <script defer src="../assets/all.js"></script>
+</head>
+<body>
+
+  <a href="../index.html"><i class="fas fa-arrow-alt-circle-left back"></i></a>
+  <form class="search-form">
+    <input type="text" class="search" placeholder="Buscar término" value="">
+  </form>
+  
+  <div id="results">
+    <ul></ul>
+  </div>
+  <script>
+  var palabras = [
+  {
+    "ingles": "bathroom / lavatory / toilet",
+    "español": "inodoro"
+    },
+    {
+    "ingles": "bathtub",
+    "español": "bañera"
+    },
+    {
+    "ingles": "bedcover / bedspread / counterpane / spread",
+    "español": "colcha"
+    },
+    {
+    "ingles": "bedsheet",
+    "español": "sábana"
+    },
+    {
+    "ingles": "bedside lamp",
+    "español": "lámpara (de mesa)"
+    },
+    {
+    "ingles": "bedside table / nightstand",
+    "español": "mesa de noche"
+    },
+    {
+    "ingles": "blanket",
+    "español": "manta"
+    },
+    {
+    "ingles": "boiler / kettle",
+    "español": "hervidor"
+    },
+    {
+    "ingles": "bottle opener",
+    "español": "destapador"
+    },
+    {
+    "ingles": "broom",
+    "español": "escoba"
+    },
+    {
+    "ingles": "bucket",
+    "español": "balde"
+    },
+    {
+    "ingles": "bunk bed",
+    "español": "litera"
+    },
+    {
+    "ingles": "burner / hotplate / ring",
+    "español": "hornilla"
+    },
+    {
+    "ingles": "can/tin opener",
+    "español": "abrelatas"
+    },
+    {
+    "ingles": "chalk",
+    "español": "tiza"
+    },
+    {
+    "ingles": "chlorine tablet",
+    "español": "pastilla de cloro"
+    },
+    {
+    "ingles": "cigarette case",
+    "español": "cigarrera"
+    },
+    {
+    "ingles": "closet / wardrobe",
+    "español": "clóset"
+    },
+    {
+    "ingles": "clothes-peg/-pin",
+    "español": "gancho (de ropa)"
+    },
+    {
+    "ingles": "coat hanger",
+    "español": "percha"
+    },
+    {
+    "ingles": "coin/piggy bank / money box",
+    "español": "alcancía"
+    },
+    {
+    "ingles": "cold/cool box / cool bag",
+    "español": "nevera portátil"
+    },
+    {
+    "ingles": "comforter / duvet / (continental) quilt",
+    "español": "edredón"
+    },
+    {
+    "ingles": "corkscrew",
+    "español": "sacacorchos"
+    },
+    {
+    "ingles": "cup",
+    "español": "taza"
+    },
+    {
+    "ingles": "desk",
+    "español": "escritorio"
+    },
+    {
+    "ingles": "detergent / dish soap / dishwashing/washing-up liquid",
+    "español": "líquido lavavajillas"
+    },
+    {
+    "ingles": "dishcloth / dishrag",
+    "español": "paño (multiuso)"
+    },
+    {
+    "ingles": "dishwasher",
+    "español": "lavavajillas"
+    },
+    {
+    "ingles": "elevator / lift",
+    "español": "ascensor"
+    },
+    {
+    "ingles": "faucet / tap",
+    "español": "llave (de agua)"
+    },
+    {
+    "ingles": "felt-tip pen",
+    "español": "marcador"
+    },
+    {
+    "ingles": "floor buffer / polisher",
+    "español": "enceradora"
+    },
+    {
+    "ingles": "floor wax",
+    "español": "cera (para pisos)"
+    },
+    {
+    "ingles": "floorcloth",
+    "español": "paño (para pisos)"
+    },
+    {
+    "ingles": "foosball / table footabll",
+    "español": "futbolín"
+    },
+    {
+    "ingles": "fridge",
+    "español": "nevera"
+    },
+    {
+    "ingles": "frying pan",
+    "español": "sartén"
+    },
+    {
+    "ingles": "furniture polish",
+    "español": "lustramuebls"
+    },
+    {
+    "ingles": "glass",
+    "español": "vaso"
+    },
+    {
+    "ingles": "lightbulb / light bulb",
+    "español": "foco"
+    },
+    {
+    "ingles": "match",
+    "español": "fósforo"
+    },
+    {
+    "ingles": "mop",
+    "español": "trapeador"
+    },
+    {
+    "ingles": "napkin / serviette",
+    "español": "servilleta"
+    },
+    {
+    "ingles": "pack / pack of cigarettes",
+    "español": "cajetilla"
+    },
+    {
+    "ingles": "pen",
+    "español": "bolígrafo"
+    },
+    {
+    "ingles": "plumber's helper / plunger",
+    "español": "sopapa"
+    },
+    {
+    "ingles": "sack",
+    "español": "saco"
+    },
+    {
+    "ingles": "shoebrush",
+    "español": "cepillo (para zapatos)"
+    },
+    {
+    "ingles": "shower",
+    "español": "ducha"
+    },
+    {
+    "ingles": "soap powder",
+    "español": "detergente en polvo"
+    },
+    {
+    "ingles": "sponge",
+    "español": "esponja"
+    },
+    {
+    "ingles": "squeegee (mop), squilgee, squimjim",
+    "español": "secador (de pisos)"
+    },
+    {
+    "ingles": "stain remover",
+    "español": "quitamanchas"
+    },
+    {
+    "ingles": "steel wool",
+    "español": "esponja de acero"
+    },
+    {
+    "ingles": "stove",
+    "español": "cocina"
+    },
+    {
+    "ingles": "teapot",
+    "español": "tetera"
+    },
+    {
+    "ingles": "toilet brush / scrubber",
+    "español": "cepillo (para baño)"
+    },
+    {
+    "ingles": "toothbrush",
+    "español": "cepillo de dientes"
+    },
+    {
+    "ingles": "toothpaste",
+    "español": "pasta dental"
+    },
+    {
+    "ingles": "toothpick",
+    "español": "palillo (de dientes)"
+    },
+    {
+    "ingles": "tray",
+    "español": "bandeja"
+    }
+]</script>
+<script src="../glosario.js"></script>
+  </body>
+</html>

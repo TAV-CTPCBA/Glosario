@@ -1,0 +1,55 @@
+html {
+    box-sizing: border-box;
+    background:#ffc600;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    align-items: center;
+    align-content: center;
+    padding: 15px;
+  }
+
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .inner-box {
+    display: flex;
+    border: 10px solid #F7F7F7;
+    background-color: white;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .inner-box p {
+    margin: 0 10px;
+  }
+
+
+  .hl {
+    background:#ffc600;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+
+
+.inner-box:hover {
+  transform: translateX(40deg);
+  color: red;
+}
+  

@@ -2,18 +2,185 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Glosario inglés > español neutro</title>
+  <title>Glosario español latinoamericano</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../assets/alimentos-style.css">
+  <script defer src="../assets/all.js"></script>
 </head>
 <body>
 
+  <a href="../index.html"><i class="fas fa-arrow-alt-circle-left back"></i></a>
   <form class="search-form">
-    <input type="text" class="search" placeholder="English word">
+    <input type="text" class="search" placeholder="Buscar término" value="">
   </form>
-  <div id="results"></div>
   
-<script src="glosario.js"></script>
+  <div id="results">
+    <ul></ul>
+  </div>
+  <script>
+  var palabras = [
+  {
+    "ingles": "aguacate / avocado / alligator pear",
+    "español": "aguacate"
+    },
+    {
+    "ingles": "apricot",
+    "español": "albaricoque"
+    },
+    {
+    "ingles": "artichoke",
+    "español": "alcachofa"
+    },
+    {
+    "ingles": "arugula / roquette / rucola",
+    "español": "rúcula"
+    },
+    {
+    "ingles": "asparagus",
+    "español": "esparrago"
+    },
+    {
+    "ingles": "aubergine / eggplant",
+    "español": "berenjena"
+    },
+    {
+    "ingles": "banana",
+    "español": "plátano"
+    },
+    {
+    "ingles": "bean",
+    "español": "frijol"
+    },
+    {
+    "ingles": "beet / beetroot",
+    "español": "remolacha"
+    },
+    {
+    "ingles": "bell / sweet pepper",
+    "español": "pimiento"
+    },
+    {
+    "ingles": "bilberry / blueberry",
+    "español": "arándano"
+    },
+    {
+    "ingles": "blackberry",
+    "español": "mora"
+    },
+    {
+    "ingles": "broccoli",
+    "español": "brócoli"
+    },
+    {
+    "ingles": "carrot",
+    "español": "zanahoria"
+    },
+    {
+    "ingles": "cauliflower",
+    "español": "coliflor"
+    },
+    {
+    "ingles": "celery",
+    "español": "apio"
+    },
+    {
+    "ingles": "chard",
+    "español": "acelga"
+    },
+    {
+    "ingles": "cherry",
+    "español": "cereza"
+    },
+    {
+    "ingles": "coconut",
+    "español": "coco"
+    },
+    {
+    "ingles": "corn / maize",
+    "español": "maíz / granos de maíz"
+    },
+    {
+    "ingles": "cucumber",
+    "español": "pepino"
+    },
+    {
+    "ingles": "date",
+    "español": "dátil"
+    },
+    {
+    "ingles": "garlic",
+    "español": "ajo"
+    },
+    {
+    "ingles": "grape",
+    "español": "uva"
+    },
+    {
+    "ingles": "grapefruit",
+    "español": "pomelo"
+    },
+    {
+    "ingles": "green bean",
+    "español": "habichuela"
+    },
+    {
+    "ingles": "green onion / scallion",
+    "español": "cebollín"
+    },
+    {
+    "ingles": "lettuce",
+    "español": "lechuga"
+    },
+    {
+    "ingles": "mandarine",
+    "español": "mandarina"
+    },
+    {
+    "ingles": "melon",
+    "español": "melón"
+    },
+    {
+    "ingles": "orange",
+    "español": "naranja"
+    },
+    {
+    "ingles": "passion fruit",
+    "español": "maracuyá"
+    },
+    {
+    "ingles": "pea",
+    "español": "arvejas"
+    },
+    {
+    "ingles": "peach",
+    "español": "durazno"
+    },
+    {
+    "ingles": "pineapple",
+    "español": "piña"
+    },
+    {
+    "ingles": "potato",
+    "español": "papa"
+    },
+    {
+    "ingles": "spinach",
+    "español": "espinaca"
+    },
+    {
+    "ingles": "strawberry",
+    "español": "fresa"
+    },
+    {
+    "ingles": "sweet potato",
+    "español": "batata"
+    },
+    {
+    "ingles": "watermelon",
+    "español": "sandía"
+    }
+]</script>
+<script src="../glosario.js"></script>
   </body>
 </html>
