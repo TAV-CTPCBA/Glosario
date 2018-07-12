@@ -1,7 +1,6 @@
 html {
     box-sizing: border-box;
     background:#ffc600;
-    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-weight: 200;
   }
@@ -71,8 +70,8 @@ html {
 
  li {
    padding: 5px;
+   font-family: 'Montserrat', sans-serif;
  }
-
 
   .hl {
     background:#ffc600;
