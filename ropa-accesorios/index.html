@@ -3,21 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Glosario español latinoamericano</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/alimentos-style.css">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
   <script defer src="../assets/all.js"></script>
 </head>
 <body>
-
-  <a href="../index.html"><i class="fas fa-arrow-alt-circle-left back"></i></a>
-  <form class="search-form">
-    <input type="text" class="search" placeholder="Buscar término" value="">
-  </form>
-  
-  <div id="results">
-    <ul></ul>
-  </div>
+    <div >
+      <a class="title" href="../index.html">
+        <h1>Glosario de español neutro</h1>
+        <img class="logo" src="../assets/logo-ctpcba.png" alt="">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="../alimentos/index.html">Alimentos <i class="fas fa-utensils"></i></a></li>
+          <li><a href="../oficios-profesiones/index.html">Oficios y profesiones <i class="fas fa-wrench"></i></a></li>
+          <li><a href="../hogar/index.html">Hogar <i class="fas fa-home"></i></a></li>
+          <li><a class="active">Ropa y accesorios <i class="fas fa-tshirt"></i></a></li>
+        </ul>
+      </nav>
+      <section>
+        <form class="search-form">
+          <input type="text" class="search" placeholder="Buscar término" value="">
+        </form>
+        <table id="results"></table> 
+      </section>
   <script>
   var palabras = [
   {

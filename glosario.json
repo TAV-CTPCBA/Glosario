@@ -1,37 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Glosario español latinoamericano</title>
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/style.css">
-  <script defer src="../assets/all.js"></script>
-</head>
-<body>
-  <div>
-    <a  class="title" href="../index.html">
-      <h1>Glosario de español neutro</h1>
-      <img class="logo" src="../assets/logo-ctpcba.png" alt="">
-    </a>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a class="active">Alimentos <i class="fas fa-utensils"></i></a></li>
-      <li><a href="../oficios-profesiones/index.html">Oficios y profesiones <i class="fas fa-wrench"></i></a></li>
-      <li><a href="../hogar/index.html">Hogar <i class="fas fa-home"></i></a></li>
-      <li><a href="../ropa-accesorios/index.html">Ropa y accesorios <i class="fas fa-tshirt"></i></a></li>
-    </ul>
-  </nav>
-  <section>
-    <form class="search-form">
-      <input type="text" class="search" placeholder="Buscar término" value="">
-    </form>
-    <table id="results"></table> 
-  </section>
-  
-  <script>
-  var palabras = [{
+{
+    "glosario" : [{
         "ingles": "aguacate / avocado / alligator pear",
         "español": "aguacate",
         "otras" : "palta"
@@ -53,13 +21,11 @@
         },
         {
         "ingles": "asparagus",
-        "español": "esparrago",
-        "otras": ""
+        "español": "esparrago"
         },
         {
         "ingles": "aubergine / eggplant",
-        "español": "berenjena",
-        "otras": ""
+        "español": "berenjena"
         },
         {
           "ingles": "bacon",
@@ -98,8 +64,7 @@
         },
         {
         "ingles": "broccoli",
-        "español": "brócoli",
-        "otras": ""
+        "español": "brócoli"
         },
         {
           "ingles": "cake",
@@ -108,13 +73,11 @@
         },
         {
         "ingles": "carrot",
-        "español": "zanahoria",
-        "otras": ""
+        "español": "zanahoria"
         },
         {
         "ingles": "cauliflower",
-        "español": "coliflor",
-        "otras": ""
+        "español": "coliflor"
         },
         {
         "ingles": "celery",
@@ -123,18 +86,15 @@
         },
         {
         "ingles": "chard",
-        "español": "acelga",
-        "otras": ""
+        "español": "acelga"
         },
         {
         "ingles": "cherry",
-        "español": "cereza",
-        "otras": ""
+        "español": "cereza"
         },
         {
         "ingles": "coconut",
-        "español": "coco",
-        "otras": ""
+        "español": "coco"
         },
         {
         "ingles": "corn / maize",
@@ -143,23 +103,19 @@
         },
         {
         "ingles": "cucumber",
-        "español": "pepino",
-        "otras": ""
+        "español": "pepino"
         },
         {
         "ingles": "date",
-        "español": "dátil",
-        "otras": ""
+        "español": "dátil"
         },
         {
         "ingles": "garlic",
-        "español": "ajo",
-        "otras": ""
+        "español": "ajo"
         },
         {
         "ingles": "grape",
-        "español": "uva",
-        "otras": ""
+        "español": "uva"
         },
         {
         "ingles": "grapefruit",
@@ -183,23 +139,19 @@
         },
         {
         "ingles": "lettuce",
-        "español": "lechuga",
-        "otras": ""
+        "español": "lechuga"
         },
         {
         "ingles": "mandarine",
-        "español": "mandarina",
-        "otras": ""
+        "español": "mandarina"
         },
         {
         "ingles": "melon",
-        "español": "melón",
-        "otras": ""
+        "español": "melón"
         },
         {
         "ingles": "orange",
-        "español": "naranja",
-        "otras": ""
+        "español": "naranja"
         },
         {
         "ingles": "passion fruit",
@@ -228,8 +180,7 @@
         },
         {
         "ingles": "spinach",
-        "español": "espinaca",
-        "otras": ""
+        "español": "espinaca"
         },
         {
           "ingles": "steak",
@@ -251,7 +202,4 @@
         "español": "sandía",
         "otras" : "patilla"
         }]
-</script>
-<script src="../glosario.js"></script>
-  </body>
-</html>
+}
