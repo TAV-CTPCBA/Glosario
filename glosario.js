@@ -13,8 +13,8 @@
         ${palabras.map(palabra => `
         <tr>
         <td>${palabra.ingles}</td>
-        <td>${palabra.español}</td>
-        <td>${palabra.otras}</td>
+        <td>${palabra.neutro}</td>
+        <td>${palabra.variaciones}</td>
         </tr>`).join('')}
 `;
   results.innerHTML = html;
@@ -40,8 +40,8 @@
           return `
           <tr>
             <td> ${palabra.ingles} </td>
-            <td> ${palabra.español} </td>
-            <td> ${palabra.otras}</td>
+            <td> ${palabra.neutro} </td>
+            <td> ${palabra.variaciones}</td>
           </tr>
           `;
         }).join('')}`;
